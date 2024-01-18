@@ -1,0 +1,20 @@
+
+<ul>
+
+    
+    <a href="/contacto/{{contacto.id}}"><li><strong>{{ contacto.nombre }}</strong></a></li>
+    
+    <li><strong>Teléfono</strong>: {{ contacto.telefono }}</li>
+
+    {% if contacto.provincia %}
+    <li><strong>Provincia</strong>: {{ contacto.provincia.nombre }}</li>
+    {% endif %}
+    
+    <li><strong>E-mail</strong>: {{ contacto.email }}</li>
+    <a href="/contacto/editar/{{contacto.id}}">Editar</a>
+    <a href="/contacto/delete/{{contacto.id}}">Eliminar</a> 
+
+
+
+
+</ul>
